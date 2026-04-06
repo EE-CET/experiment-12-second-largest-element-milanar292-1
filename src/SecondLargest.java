@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class SecondLargest{
+public class SecondLargest {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -17,7 +17,7 @@ public class SecondLargest{
             if (arr[i] > largest) {
                 secondLargest = largest;
                 largest = arr[i];
-            } else if (arr[i] > secondLargest && arr[i] != largest) {
+            } else if (arr[i] > secondLargest) {  // ← removed arr[i] != largest
                 secondLargest = arr[i];
             }
         }
